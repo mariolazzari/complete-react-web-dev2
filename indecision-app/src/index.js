@@ -6,19 +6,19 @@ import registerServiceWorker from "./registerServiceWorker";
 
 //ReactDOM.render(<App />, document.getElementById('root'));
 
-var user = {
+const user = {
     name: "Mario",
     age: 43,
     location: "Coccaglio"
 };
 
-var app = {
+const app = {
     title: "My title",
     //subtitle: "My subtitle",
     options: ["One", "Two"]
 };
 
-let template = (
+const template = (
     <div>
         <h1>{user.name}</h1>
         <p>{user.age}</p>
@@ -28,7 +28,7 @@ let template = (
     </div>
 );
 
-let template2 = (
+const template2 = (
     <div>
         <h1>{app.title}</h1>
         {app.subtitle && <h2>app.subtitle</h2>}
